@@ -1,0 +1,122 @@
+@media(min-width:991px) {
+    .header__logo {
+        max-width: 126px;
+        display: inline-block;
+    }
+    
+    .header {
+        padding: 27px;
+        align-items: center;
+        display: flex;
+    }
+    
+    .footer__logo a {
+        margin-bottom: 22px;
+        max-width: 163px;
+    }
+}
+
+.footer__bottom p {
+    opacity: 0.6;
+}
+
+
+
+
+
+
+.header,
+.welcomescreen,
+.footer,
+.mobile__menu,
+.toppage,
+.marblefeatures:after,
+.antietchinfo,
+.thankyou__right {
+    background: #3C3038;
+}
+
+.brownbtn a,
+.welcomescreen .swiper-scrollbar-drag,
+.welcomescreen__title-line i,
+.info__title-line i,
+.atmarble__title-line i,
+.header__menu ul>li a:after,
+.footer__menu li>a:after,
+.contacts__btn,
+.section-title i,
+.antietchfeatures__item:before {
+    background: #816F7F;
+
+
+}
+
+.brownbtn a:hover,
+.transform__btn a:hover,
+.contacts__btn:hover {
+    background: #958293;
+    color: #fff;
+}
+
+
+.transform__btn a,
+.footer__info-item a:hover,
+.jq-selectbox li:hover {
+    color: #816F7F;
+}
+
+.transform__btn a {
+    border-color: #816F7F;
+}
+
+.jq-selectbox li.selected:hover {
+    color: #fff;
+}
+
+
+
+
+
+
+.jq-selectbox li.selected {
+    background-color: rgba(#816F7F, 0.5);
+}
+
+
+.header__social a:hover svg path,
+.mobile__social svg path,
+.footer__social a:hover svg path,
+.contacts__info-social a:hover svg path {
+    fill: #816F7F;
+}
+
+
+
+
+@media(max-width:991.8px)  {
+    .header {
+        padding: 15px 0;
+    }
+
+    .header__logo {
+        max-width: 118px;
+    }
+
+    .footer__logo a {
+        max-width: 120px;
+    }
+}
+
+@media(max-width:575.8px) {
+    .header__logo {
+        max-width: 100px;
+    }
+
+    .header {
+        padding: 12px 0;
+    }
+
+    .footer__logo a {
+        max-width: 100px;
+    }
+}
