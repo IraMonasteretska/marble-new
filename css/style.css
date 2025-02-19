@@ -2144,28 +2144,32 @@ body {
 .weprovideinfo .plyr--video .plyr__control:hover,
 .weprovideinfo .plyr__controls__item.plyr__control:hover,
 .weprovideinfo .plyr--video .plyr__control[aria-expanded=true] {
-  background: var(--plyr-video-control-background-hover, var(--plyr-color-main, var(--plyr-color-main, #c08465)));
+  background: var(--plyr-video-control-background-hover, var(--plyr-color-main, var(--plyr-color-main, #816F7F)));
   cursor: pointer;
 }
 .weprovideinfo .plyr--full-ui input[type=range] {
-  color: var(--plyr-range-fill-background, var(--plyr-color-main, var(--plyr-color-main, #c08465)));
+  color: var(--plyr-range-fill-background, var(--plyr-color-main, var(--plyr-color-main, #816F7F)));
   cursor: pointer;
 }
 .weprovideinfo .plyr__control--overlaid {
   background: transparent;
   width: 136px !important;
   height: 135px;
-  background-image: url(../img/svg/play-circle.svg);
-  background-size: cover;
+  background-image: url(../img/new/play.svg);
+  background-size: 100%;
   background-repeat: no-repeat;
   visibility: visible;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 .weprovideinfo .plyr__control--overlaid svg {
   opacity: 0;
 }
 .weprovideinfo .plyr__control--overlaid:hover {
-  background: var(--plyr-video-control-background-hover, var(--plyr-color-main, var(--plyr-color-main, transparent))) !important;
-  background-image: url(../img/svg/play-circle.svg) !important;
+  background-color: transparent !important;
+  background-image: url(../img/new/play.svg) !important;
+  background-size: 100% !important;
+  opacity: 0.8;
 }
 .weprovideinfo .plyr.plyr--stopped .plyr__controls {
   display: none !important;

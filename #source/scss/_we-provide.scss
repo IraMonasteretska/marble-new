@@ -42,13 +42,13 @@
   .plyr__controls__item.plyr__control:hover,
   .plyr--video .plyr__control[aria-expanded="true"] {
     background: var(--plyr-video-control-background-hover,
-        var(--plyr-color-main, var(--plyr-color-main, #c08465)));
+        var(--plyr-color-main, var(--plyr-color-main, #816F7F)));
     cursor: pointer;
   }
 
   .plyr--full-ui input[type="range"] {
     color: var(--plyr-range-fill-background,
-        var(--plyr-color-main, var(--plyr-color-main, #c08465)));
+        var(--plyr-color-main, var(--plyr-color-main, #816F7F)));
     cursor: pointer;
   }
 
@@ -56,10 +56,11 @@
     background: transparent;
     width: 136px !important;
     height: 135px;
-    background-image: url(../img/svg/play-circle.svg);
-    background-size: cover;
+    background-image: url(../img/new/play.svg);
+    background-size: 100%;
     background-repeat: no-repeat;
     visibility: visible;
+    transition: 0.3s;
 
 
     svg {
@@ -67,9 +68,10 @@
     }
 
     &:hover {
-      background: var(--plyr-video-control-background-hover,
-          var(--plyr-color-main, var(--plyr-color-main, transparent))) !important;
-      background-image: url(../img/svg/play-circle.svg) !important;
+      background-color: transparent !important;
+      background-image: url(../img/new/play.svg) !important;
+      background-size: 100% !important;
+      opacity: 0.8;
     }
   }
 
@@ -150,13 +152,15 @@
 @media(max-width:1800px) {
   .weprovide__card img {
     height: 320px;
-}
+  }
 
 }
+
 @media(max-width:1600px) {
   .weprovide__card img {
     height: 280px;
-}
+  }
+
   .weprovide__card-name {
     font-size: 26px;
   }
@@ -173,7 +177,7 @@
 @media(max-width:1400px) {
   .weprovide__card img {
     height: 250px;
-}
+  }
 
   .weprovideinfo .plyr audio,
   .weprovideinfo .plyr iframe,
@@ -197,7 +201,8 @@
 @media(max-width:1200px) {
   .weprovide__card img {
     height: 200px;
-}
+  }
+
   .weprovideinfo__video {
     margin-top: 30px;
   }
@@ -214,7 +219,7 @@
 
   .weprovide__card img {
     height: auto;
-}
+  }
 
   .weprovideinfo .plyr audio,
   .weprovideinfo .plyr iframe,
